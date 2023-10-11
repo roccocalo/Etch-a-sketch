@@ -7,7 +7,7 @@ const buttonEraser = document.querySelector("#Eraser");
 const buttonClear = document.querySelector("#Clear");
 const colorPicker = $("#colorChooser");
 
-const mediaQuery = window.matchMedia('(max-width: 480px');
+const mediaQuery = window.matchMedia('(max-width: 480px)');
 
 slider.addEventListener("change", (event) => {
     clearGrid();
@@ -80,6 +80,8 @@ $(document).ready(function () {
     buttonClear.addEventListener("click", () => {
         $(".grid").css("background-color", "white");
     });
+
+    
 });
 
 
