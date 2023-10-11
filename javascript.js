@@ -29,7 +29,6 @@ function createGrid(x) {
         $(".grid").width(300 / x);
         $(".grid").height(300 / x);
     }
-
 };
 
 function black() {
@@ -68,19 +67,19 @@ $(document).ready(function () {
     createGrid(16);
     $(".grid").mouseover(black);
 
-        colorPicker.on("input", color);
-        buttonBlack.addEventListener("click", () => {
-            $(".grid").mouseover(black);
-        });
-        buttonRainbow.addEventListener("click", () => {
-            $(".grid").mouseover(rainbow);
-        });
-        buttonEraser.addEventListener("click", () => {
-            $(".grid").mouseover(eraser);
-        });
-        buttonClear.addEventListener("click", () => {
-            $(".grid").css("background-color", "white");
-        });
+    colorPicker.on("input", color);
+    buttonBlack.addEventListener("click", () => {
+        $(".grid").mouseover(black);
     });
+    buttonRainbow.addEventListener("click", () => {
+        $(".grid").mouseover(rainbow);
+    });
+    buttonEraser.addEventListener("click", () => {
+        $(".grid").mouseover(eraser);
+    });
+    buttonClear.addEventListener("click", () => {
+        $(".grid").css("background-color", "white");
+    });
+});
 
 

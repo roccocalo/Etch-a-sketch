@@ -33,27 +33,26 @@ button {
 #colorChooser {
     width: 60px;
     height: 30px;
-
 }
 
 .div-container {
     position: relative;
-	outline:2px solid #000;
-	font-size: 0;
-	margin:auto;
-	height:500px;
-	width:500px;
-	padding: 0;
-	border: none;
+    outline: 2px solid #000;
+    font-size: 0;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    padding: 0;
+    border: none;
     margin-top: 20px;
 }
 
 .grid {
-	margin:0;
-	padding:0;
-	border:none;
-	outline:1px solid #000;
-	display:inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 1px solid #000;
+    display: inline-block;
 }
 
 .div-container div:hover {
@@ -69,7 +68,7 @@ button {
     margin-top: -5px;
 }
 
-.text { 
+.text {
     font-size: large;
     margin-left: 5px;
 }
