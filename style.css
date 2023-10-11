@@ -33,23 +33,48 @@ button {
 #colorChooser {
     width: 60px;
     height: 30px;
-    
+
 }
 
 .div-container {
-    background-color: chartreuse;
-    
-    border: 6px;
+    position: relative;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:500px;
+	width:500px;
+	padding: 0;
+	border: none;
+    margin-top: 20px;
+}
+
+.grid {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #000;
+	display:inline-block;
+}
+
+.div-container div:hover {
+    background-color: #000;
 }
 
 .slider {
-    width: 200px;
-    background: black;
-    
+    width: 240px;
 }
 
+#rangeValue {
+    margin-left: 180px;
+    margin-top: -5px;
+}
 
-    .lower-container {
+.text { 
+    font-size: large;
+    margin-left: 5px;
+}
+
+.lower-container {
     margin-top: 20px;
 }
 
@@ -64,11 +89,17 @@ a {
 }
 
 .footer {
-display: flex;
-gap: 10px;
-align-items: center;
-font-size: 18px;
-margin-top: auto;
-height: 32 px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    margin-top: auto;
+    height: 32 px;
 }
 
+@media all and (max-width: 480px) {
+    .div-container {
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="javascript.js" defer></script>
 </head>
 
@@ -21,7 +22,8 @@
         <div class="div-container"></div>
         <div class="lower-container">
             <button id="Clear">Clear</button>
-            <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+            <input type="range" min="1" max="64" value="16" class="slider" id="myRange" oninput="rangeValue.innerText = this.value"><p id="rangeValue">16</p>
+        <div class="text">Please select the Pixel Size</div>
         </div>
     </div>
         <div class="footer">
