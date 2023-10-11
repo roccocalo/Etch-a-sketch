@@ -21,13 +21,15 @@ function createGrid(x) {
             $(".div-container").append("<div class='grid' ></div>");
         };
     };
-    $(".grid").width(500 / x);
-    $(".grid").height(500 / x);
+
     $(".grid").css("backgroundColor", "white");
 
     if (mediaQuery.matches) {
         $(".grid").width(300 / x);
         $(".grid").height(300 / x);
+    } else {
+        $(".grid").width(500 / x);
+        $(".grid").height(500 / x);
     }
 };
 
@@ -81,7 +83,7 @@ $(document).ready(function () {
         $(".grid").css("background-color", "white");
     });
 
-    
+
 });
 
 
