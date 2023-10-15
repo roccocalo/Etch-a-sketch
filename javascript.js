@@ -82,8 +82,6 @@ $(document).ready(function () {
     buttonClear.addEventListener("click", () => {
         $(".grid").css("background-color", "white");
     });
-
-
 });
 
 

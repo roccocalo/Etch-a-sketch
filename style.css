@@ -94,6 +94,7 @@ a {
     font-size: 18px;
     margin-top: auto;
     height: 32 px;
+    justify-content: center;
 }
 
 @media all and (max-width: 480px) {
